@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add Students Page</h1>
+    <div class="container">
+      <label for="name">name:</label>
+      <input type="text" id="name" name="name" />
+    </div>
+    <div class="container">
+      <label for="subj">Profession</label>
+      <select id="subj" name="subj">
+        <option value="Hebrew">Hebrew</option>
+        <option value="Arabic">Arabic</option>
+        <option value="English">English</option>
+        <option value="Geography">Geography</option>
+        <option value="Math">Math</option>
+        <option value="Physics">Physics</option>
+        <option value="Computers">Computers</option>
+      </select>
+    </div>
+    <div class="container">
+      <label for="grade">Grade (between 0-100)</label>
+      <input type="number" id="grade" name="grade" />
+    </div>
+    <div class="container">
+      <label for="maker">Producer</label>
+      <input type="text" name="maker" id="maker" />
+    </div>
+    <div class="container">
+      <label for="year">Yearbook</label>
+      <input type="number" name="year" id="year" />
+    </div>
+    <div class="container">
+      <label for="color">Color</label>
+      <input type="text" id="color" name="color" />
+    </div>
+    <button class="btn" onclick="AddStudent()">Click to add Student</button>
+
+    <button onclick="Render()">Show All studeny</button>
+    <div id="result"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
